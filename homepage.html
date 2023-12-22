@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
         }
 
         #contianer {
@@ -35,14 +38,45 @@
 
         }
 
+        /* ------------------------------------------------------------------------------------- */
         #nav {
+
             float: right;
             width: 900px;
             height: 100px;
-            background-color: green;
+            display: flex;
+            align-items: end;
 
         }
 
+        #nav ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .mainMenu {
+            position: relative;
+            margin: 0;
+            padding: 20px 60px;
+        }
+        .mainMenu:link, .mainMenu:visited {
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .hovMenu ul{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+ 
+        /* --------------------------------------------------------------------------------------- */
         #slide {
             clear: both;
             width: 100%;
@@ -84,7 +118,30 @@
     <div id="contianer">
         <div id="header">
             <div id="logo"></div>
-            <div id="nav"></div>
+
+            <div id="nav">
+                <ul>
+                    <li><a href="#" class="mainMenu">단체 여행</a>
+                        <div class="hovMenu">
+                            <ul>
+                                <li><a href="#">회사 연수</a></li>
+                                <li><a href="#">수학 여행</a></li>
+                            </ul>                        
+                        </div>
+                    </li>
+                    <li><a href="#" class="mainMenu">맞춤 여행</a>
+                        <div class="hovMenu">
+                            <ul>
+                                <li><a href="#">4.3 평화 기행</a></li>
+                                <li><a href="#">곶자왈 체험</a></li>
+                                <li><a href="#">힐링 워크샵</a></li>
+                            </ul>                        
+                        </div>
+                    </li>
+                    <li><a href="#" class="mainMenu">갤러리</a></li>
+                    <li><a href="#" class="mainMenu">문의하기</a></li>
+                </ul>
+            </div>
         </div>
 
 
