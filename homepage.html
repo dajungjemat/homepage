@@ -55,13 +55,19 @@
             width: 100%;
             height: 300px;
         }
-
+/* ----------------------------------------------------------------------------------------- */
         #tabMenu {
             float: left;
             width: 600px;
             height: 100%;
             background-color: blueviolet;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
         }
+
+
+/* ----------------------------------------------------------------------------------------- */
 
         #quickLink {
             float: right;
@@ -90,9 +96,32 @@
 
 
         <div id="slide"></div>
-
+<!-- -------------------------------------------------------------------------- -->
         <div id="contents">
-            <div id="tabMenu"></div>
+            <div id="tabMenu">
+                <ul>
+                    <label><a href="#">공지사항</a></label>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <ul>
+                    <label><a href="#">갤러리</a></label>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    
+                </ul>
+            </div>
+
+<!-- -------------------------------------------------------------------------- -->
+
             <div id="quickLink"></div>
         </div>
 
